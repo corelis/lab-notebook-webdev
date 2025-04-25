@@ -25,21 +25,39 @@ Calculate the specificity of the rules below.
 
 ```css
 nav .list-item > a {
+id: 0
+class: 1
+element: 2
 }
 
 #main::first-letter {
+id: 1
+class: 0
+element: 1
 }
 
 input[type] {
+id: 0
+class: 1
+element: 1
 }
 
 section .main::first-line {
+id: 0
+class: 1
+element: 2
 }
 
 nav ul.menu li#first a:not([class='visited']) {
+id: 1
+class: 2?
+element: 4
 }
 
 div ol li ul li ol li ul li a {
+id: 0
+class: 0
+element: 10
 }
 ```
 
