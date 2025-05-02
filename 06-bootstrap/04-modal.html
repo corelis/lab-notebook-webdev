@@ -14,5 +14,40 @@
   <body>
     <h1>04 - Bootstrap Modal</h1>
     <!-- Add your code here -->
+    <main class="container mt-4">
+      <div class="text-center">
+        <div class="my-4">
+          Click on the button below for more information inside a modal
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modal"
+        >
+          More details
+        </button>
+      </div>
+      <div class="modal fade mt-5" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">More Details</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              numquam repellendus architecto maiores aperiam odit, maxime
+              perspiciatis voluptas pariatur ipsam saepe dolore laboriosam
+              ratione sunt fuga deleniti non quae illum?
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
