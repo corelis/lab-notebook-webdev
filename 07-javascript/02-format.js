@@ -1,11 +1,13 @@
-const formatItems = (input) => {
-  // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
+// const formatItems = (input) => {
+//   // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
 
-  // for reference, see the MDN Number page:
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+//   // for reference, see the MDN Number page:
+//   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+//   input.forEach();
+//   return input;
+// };
 
-  return input;
-};
+const formatItems = (input) => input.map((n) => n.toFixed(3)).join(", ");
 
 console.log(formatItems([1, 4, 17, 26, 41]));
 // expected: '1.000, 4.000, 17.000, 26.000, 41.000'
